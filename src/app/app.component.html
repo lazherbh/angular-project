@@ -1,0 +1,25 @@
+﻿<!-- nav -->
+
+<nav class="navbar navbar-expand navbar-dark bg-light-blue">
+    <div class="container">
+      <a class="navbar-brand" href="#">Angular App</a>
+  
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/offre">Offre</a>
+        </li>
+        <li class="nav-item">
+            <button class="btn btn-link nav-item nav-link"  (click)="logout()">Logout</button>
+
+          </li>
+      </ul>
+    </div>
+  </nav>
+<!-- main app container -->
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
+

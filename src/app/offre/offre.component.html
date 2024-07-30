@@ -1,0 +1,18 @@
+<div class="job-listings">
+  <h2>Dernières Offres d'emploi</h2>
+  <div class="job-card" *ngFor="let e of listOffres">
+      
+        <h3>{{ e.title }}</h3>
+        <p>{{ e.details }}</p>
+     <div class="job-details">
+        
+        <span>{{ e.domaine }}</span>
+        <span>{{ e.mode }} </span>
+        <span>{{ e.periodeEnMois }} Mois</span>
+
+
+        <button (click)="viewMore(e)">Voir plus</button>
+      </div>
+  </div>
+  </div>
+  
